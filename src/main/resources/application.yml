@@ -1,0 +1,29 @@
+backup:
+  taskList:
+    - type: MySQL
+      ip: 127.0.0.1
+      db: chat
+      username: root
+      password: 123456
+      location: E:\backup
+      cron: '*/30 * * * * ?'
+      run-at-start-up: Y
+      enable: Y
+    - type: MySQL
+      ip: 127.0.0.1
+      db: house
+      username: root
+      password: 123456
+      location: E:\backup
+      cron: '*/10 * * * * ?'
+      run-at-start-up: N
+      enable: N
+    - type: Oracle
+      db: orcl
+      username: XXNG
+      password: 123456
+      location: dpdata1
+      tablespace: XXNG
+      cron: '*/10 * 12 * * ?'
+      run-at-start-up: N
+      enable: N
